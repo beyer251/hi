@@ -1,0 +1,86 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+  background-color: lightblue;
+}
+
+.grid_container {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 48%;
+	top: 35%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Yellowtail', cursive;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+  color: white;
+}
+
+/* Animation Keyframes */
+
+@keyframes a_move {
+	0% { top: -300px; opacity: 0; }
+	100% { top: 0px; opacity: 1; }
+}
+
+.a {
+	position: relative;
+	animation: a_move 2s linear;
+
+}
+
+@keyframes n_move {
+	0% { top: -300px; opacity: 0; }
+	100% { top: 0px; opacity: 1; }
+}
+
+.n {
+	position: relative;
+	animation: n_move 2s linear;
+
+}
+
+@keyframes g_move {
+	0% { top: -300px; opacity: 0; }
+	100% { top: 0px; opacity: 1; }
+}
+
+.g {
+	position: relative;
+	animation: g_move 2s linear;
+
+}
+
+@keyframes e_move {
+  0% { top: -300px;  transform: rotate(-360deg);left: 0px; opacity: 0; }
+  68% { top: -100px; transform: rotate(-360deg); left: 0px; opacity: .61; }
+  90% {top: -50px;  transform: rotate(0deg); left: 30px; opacity: 1;}
+  100% {top: 0px;  transform: rotate(0deg); left: 30px; opacity: 1;}
+}
+
+.e {
+	position: relative;
+	animation: e_move 2s linear forwards;
+
+}
+
+@keyframes l_move {
+	0% { top: -300px;  transform: rotate(360deg);left: 0px; opacity: 0; }
+  68% { top: -100px; transform: rotate(360deg); left: 0px; opacity: .61; }
+  90% {top: -50px;  transform: rotate(0deg); left: -40px; opacity: 1;}
+  100% {top: 0px;  transform: rotate(0deg); left: -40px; opacity: 1;}
+}
+
+.l {
+	position: relative;
+	animation: l_move 2s linear forwards;
+
+}
